@@ -1,0 +1,36 @@
+body{
+    background-color: #086972;
+    color: #17b978;
+}
+
+i.icon{
+    font-size: 1em;
+}
+
+.posts{
+    // display: grid;
+    // grid-template-columns: repeat(1, 30%);
+    // img{
+    //     width: 10em;
+    // }
+    text-align: center;
+    .view{
+        margin-right: 20px;
+    }
+    a{
+        border: solid 2px #333;
+        padding: 5px;
+        color: #17b978;
+    }
+    a:hover{
+        background-color: grey;
+        color: black;
+    }
+    .blogs{
+        margin-top: 50px;
+        padding: 20px;
+        img{
+            padding-bottom: 20px;
+        }
+    }
+}

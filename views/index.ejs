@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="public/Index CSS/style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <div class="header item"><i class="code icon"></i> The Blog</div>
+        </div>
+        <a href="/" class="item">Home</a>
+        <a href="/new" class="item">New Posts</a>
+    </div>
+
+
+    <div class="posts ui grid container stackable centered">
+            <% blogs.forEach(post => { %>
+                <div class="eight wide column">
+                    <div class="blogs">
+                        <h4><%= post.title %></h4>
+                        <img class="small ui image" src="<%= post.image %>" alt="">
+                        <p>Post Created: <%= post.created %></p>
+                        <a href="/show/<%=post._id %>" class="view">View More</a>
+                        <a href="/edit/<%=post._id %>">Edit Post</a>
+                    </div>
+                </div>
+           <% }); %>
+    </div>
+</body>
+</html>

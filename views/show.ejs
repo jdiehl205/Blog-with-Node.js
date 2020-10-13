@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="public/Show CSS/style.css">
+    <title>Show Blog</title>
+</head>
+<body>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <div class="header item"><i class="code icon"></i> The Blog</div>
+        </div>
+        <a href="/" class="item">Home</a>
+        <a href="/new" class="item">New Posts</a>
+    </div>
+
+    <div class="center">
+        <div class="posts ui container grid centered">
+            <div>
+                <h1 class=""><%= post.title %></h1>
+            <img class="ui medium image" src="<%= post.image %>" alt="">
+            <p><%= post.body %></p>
+            <div class="ui grid column">
+                <form action="/delete/<%=post._id %>?_method=DELETE" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

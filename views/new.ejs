@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <base href="/">
+    <link rel="stylesheet" href="public/New CSS/style.css">
+    <title>Blog Form</title>
+</head>
+<body>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <div class="header item"><i class="code icon"></i> The Blog</div>
+        </div>
+        <a href="/" class="item">Home</a>
+        <a href="/new" class="item">New Posts</a>
+    </div>
+
+    <div id="new">
+        <form action="/create" method="POST" class="ui grid container centered">
+            <h1 class="row">Add a New Blog!</h1>
+            <div>
+                <input required type="text" placeholder="Add A Title..." name="blog[title]">
+            <br>
+            <br>
+            <input required type="url" placeholder="Add an Image..." name="blog[image]">
+            <br>
+            <br>
+            <textarea required name="blog[body]" required cols="40" rows="10"></textarea>
+            <br>
+            <br>
+            <button type="submit">Add Blog</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

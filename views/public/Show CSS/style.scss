@@ -1,0 +1,42 @@
+body{
+    background-color: #086972;
+    color: #17b978;
+    margin: 0;
+    height: 1000px;
+}
+
+.posts{
+    img{
+        width: 500px;
+        padding-top: 40px;
+    }
+    h1{
+        margin-bottom: -30px;
+        text-align: left;
+    }
+    p{
+        font-size: 1.5em;
+        padding-top: 20px;
+        text-align: left;
+    }
+    button{
+        margin-top: 10px;
+        border: #333 3px solid;
+        color: #17b978;
+        padding: 5px;
+        background-color: #086972;
+    }
+    button:hover{
+        animation: hover .8s ease-in-out forwards .3s;
+    }
+    margin-top: 5%;
+}
+
+.center{
+    margin-top: 80px;
+}
+
+@keyframes hover{
+    from{background-color: #086972; color: #086972;}
+    to{background-color: red; color: #f3f3f3;}
+}

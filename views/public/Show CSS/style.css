@@ -1,0 +1,66 @@
+body {
+  background-color: #086972;
+  color: #17b978;
+  margin: 0;
+  height: 1000px;
+}
+
+.posts {
+  margin-top: 5%;
+}
+
+.posts img {
+  width: 500px;
+  padding-top: 40px;
+}
+
+.posts h1 {
+  margin-bottom: -30px;
+  text-align: left;
+}
+
+.posts p {
+  font-size: 1.5em;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.posts button {
+  margin-top: 10px;
+  border: #333 3px solid;
+  color: #17b978;
+  padding: 5px;
+  background-color: #086972;
+}
+
+.posts button:hover {
+  -webkit-animation: hover .8s ease-in-out forwards .3s;
+          animation: hover .8s ease-in-out forwards .3s;
+}
+
+.center {
+  margin-top: 80px;
+}
+
+@-webkit-keyframes hover {
+  from {
+    background-color: #086972;
+    color: #086972;
+  }
+  to {
+    background-color: red;
+    color: #f3f3f3;
+  }
+}
+
+@keyframes hover {
+  from {
+    background-color: #086972;
+    color: #086972;
+  }
+  to {
+    background-color: red;
+    color: #f3f3f3;
+  }
+}
+/*# sourceMappingURL=style.css.map */

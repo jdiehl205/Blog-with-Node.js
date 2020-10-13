@@ -1,0 +1,37 @@
+body {
+  background-color: #086972;
+  color: #17b978;
+}
+
+i.icon {
+  font-size: 1em;
+}
+
+.posts {
+  text-align: center;
+}
+
+.posts .view {
+  margin-right: 20px;
+}
+
+.posts a {
+  border: solid 2px #333;
+  padding: 5px;
+  color: #17b978;
+}
+
+.posts a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.posts .blogs {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.posts .blogs img {
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
